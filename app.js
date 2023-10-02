@@ -11,16 +11,21 @@ app.use(express.static(__dirname+"/public"));
 
 
 app.get("/",(req,res)=>{
-        res.render(__dirname + "/views/index.ejs");
+    const title ="Главная страница";
+        res.render(__dirname + "/views/index.ejs",{title:title});
 
 });
 
 app.get("/about",(req,res)=>{
-        res.render(__dirname + "/views/about.ejs");
+    const title ="О приложении";
+        res.render(__dirname + "/views/about.ejs",{title:title});
 });
 
 app.get("/contacts",(req,res)=>{
-        res.render(__dirname + "/views/contacts.ejs");
+    const title ="Страница контактов";
+ const data = ['email: ducha2112@yandex.ru','tel.: +7 (985) 922-89-70','telegram: @ducha2112' ]
+        res.render(__dirname + "/views/contacts.ejs",{title:title,data:data});
+     
 });
 
 app.listen(PORT,'localhost',()=>{
