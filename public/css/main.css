@@ -41,3 +41,23 @@ a {
 .contacts {
     margin-top: 20px;
 }
+.container>p {
+    margin-top: 20px;
+}
+.box {
+    text-align: center;
+    color: cyan;
+    margin-top: 30px;
+}
+.box #text {
+    margin-top: 30px;
+}
+.box #text ul {
+    margin-top: 30px;
+    list-style-type: none;
+    color: #FFD700;
+}
+ul {
+    margin-top: 30px;
+    color: #fafaca;
+}
