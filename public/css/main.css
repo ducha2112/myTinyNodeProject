@@ -1,63 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+  --index-v: calc(1vw + 1vh);
 }
-body{
-    background: linear-gradient(blue, pink) no-repeat;
-    color:#fafaca;
-    min-height: 700px;
-}
-.container{
-    text-align: center;
-    margin-top: 40px;
-}
-.container>p {
-    margin-top: 20px;
-}
-nav {
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-nav .logo {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #DC143C;
-}
-.nav ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.nav ul>li{
-    margin-right: 20px;
-    list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 a {
-    color: #fafafa;
-   text-decoration: none;
-    color: #DC143C;
+  cursor: pointer;
 }
-.contacts {
-    margin-top: 20px;
+body {
+  background: linear-gradient(blue, pink) no-repeat;
+  color: #fafaca;
 }
-.container>p {
-    margin-top: 20px;
+.container {
+  text-align: center;
+  margin-top: calc(var(--index-v) * 2);
+  min-height: calc(var(--index-v) * 22);
+  padding: calc(var(--index-v) * 2);
+}
+.container .content {
+  margin-top: calc(var(--index-v) * 2);
+  display: flex;
+  justify-content: center;
+}
+.container .content img {
+  height: calc(var(--index-v) * 15);
+}
+.container .content > p {
+  margin-top: calc(var(--index-v) * 2);
+  width: calc(var(--index-v) * 20);
+  margin-left: calc(var(--index-v) * 2);
+  font-size: 1.3rem;
+  text-align: start;
+}
+
+nav {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+nav .logo a {
+  color: #e8ccd1;
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+.nav ul > li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+a {
+  color: #fafafa;
+  text-decoration: none;
+  color: #e8ccd1;
+}
+.container .contacts {
+  margin-top: 20px;
+}
+.container .contacts ul > li {
+  list-style-type: none;
+}
+.container > p {
+  margin-top: 20px;
 }
 .box {
-    text-align: center;
-    color: cyan;
-    margin-top: 30px;
+  text-align: center;
+  color: cyan;
+  margin-top: 30px;
 }
 .box #text {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .box #text ul {
-    margin-top: 30px;
-    list-style-type: none;
-    color: #FFD700;
+  margin-top: 30px;
+  list-style-type: none;
+  color: #ffd700;
+  font-size: 1.3rem;
+}
+.box #text ul > li {
+  margin-bottom: calc(var(--index-v) * 1.05);
+  list-style-type: none;
 }
 ul {
-    margin-top: 30px;
-    color: #fafaca;
+  margin-top: 30px;
+  color: #fafaca;
+}
+footer {
+  background: transparent;
+  color: #fafafa;
+  height: calc(var(--index-v) * 3);
+}
+footer .contains {
+  text-align: center;
+  padding: calc(var(--index-v) * 1.05);
 }

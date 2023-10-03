@@ -4,21 +4,30 @@
 
 <head>
 
-  <title><%= title %></title>
+  <title>
+    <%= title %>
+  </title>
 
-    <link rel='stylesheet' href='css/main.css'>
-<%- include("partials/scripts.ejs") %>
+  <link rel='stylesheet' href='css/main.css'>
+  <%- include("partials/scripts.ejs") %>
 </head>
 
 <body>
-<%- include("partials/nav.ejs") %>
- <div class='container'>
-  <h2>Все об этом приложении</h2>
-  <p>Встроенный JavaScript, или EJS, - это простой и понятный язык шаблонов, который позволяет JavaScript генерировать HTML. Он часто используется в Express.js, a Node.js framework для создания веб-приложений, но его также можно использовать в других средах JavaScript.
+  <%- include("partials/nav.ejs") %>
+    <div class='container'>
+      <h2>Все об этом приложении</h2>
+      <div class="content">
+        <img src="img/ejs.png" alt="ejs">
+        <p>Встроенный JavaScript, или EJS, - это простой и понятный язык шаблонов, который позволяет JavaScript
+          генерировать HTML. Он часто используется в Express.js, a Node.js framework для создания веб-приложений, но его
+          также можно использовать в других средах JavaScript.
 
-В этой статье будут рассмотрены основы EJS и способы использования EJS для создания динамических веб-приложений.</p>
-</div>
-
+          В этой статье будут рассмотрены основы EJS и способы использования EJS для создания динамических
+          веб-приложений.
+        </p>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
 </body>
 
 </html>

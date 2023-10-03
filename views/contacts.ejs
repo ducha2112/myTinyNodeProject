@@ -4,31 +4,35 @@
 
 <head>
 
-    <title><%= title %></title>
+  <title>
+    <%= title %>
+  </title>
 
-    <link rel='stylesheet' href='css/main.css'>
-<%- include("partials/scripts.ejs") %>
+  <link rel='stylesheet' href='css/main.css'>
+  <%- include("partials/scripts.ejs") %>
 </head>
 
 <body>
-<%- include("partials/nav.ejs") %>
-            
- <div class='container'>
-  <h2>Контакты</h2>
+  <%- include("partials/nav.ejs") %>
 
-<div class="contacts">
-<h3>Дадухин Сергей</h3>
-<h4>Fullstack-разработчик</h4>
-<% if (data.length) { %>
-<ul>
-    <% for(let i = 0; i< data.length;i++) { %>
-    <li><%= data[i] %></li>
-    <% }%>
-</ul>
-<% }%>
-</div>
-</div>
+    <div class='container'>
+      <h2>Контакты</h2>
 
+      <div class="contacts">
+        <h3>Дадухин Сергей</h3>
+        <h4>Fullstack-разработчик</h4>
+        <% if (data.length) { %>
+          <ul>
+            <% for(let i=0; i< data.length;i++) { %>
+              <li>
+                <%= data[i] %>
+              </li>
+              <% }%>
+          </ul>
+          <% }%>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
 </body>
 
 </html>
